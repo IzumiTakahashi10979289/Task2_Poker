@@ -9,7 +9,7 @@ your_hand = [[0 for i in range(5)],[0 for i in range(5)]]
 print('＊0：スペード,1：クラブ,2：ダイヤ,3：ハート＊')
 print('入力例：***0 01 3 06 3 10 3 01 1 01***')
 
-draw = list(map(int, input('>>>').split()))
+draw=list(map(int, input('>>>').split()))
 for i in range(5):
       your_hand[0][i] = draw[i*2]
       your_hand[1][i] = draw[1+i*2]
